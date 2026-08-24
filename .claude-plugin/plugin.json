@@ -1,0 +1,23 @@
+{
+  "name": "warmysender",
+  "version": "1.0.0",
+  "description": "Run your outreach on autopilot from Claude Code and Cowork \u2014 build, launch and manage cold email, LinkedIn and Instagram campaigns, verify emails, and tune warmup in plain language. Every action is paced by WarmySender's scheduler within safe sending limits.",
+  "author": {
+    "name": "WarmySender",
+    "email": "hello@warmysender.com",
+    "url": "https://warmysender.com"
+  },
+  "homepage": "https://warmysender.com/mcp",
+  "repository": "https://github.com/warmysender/warmysender-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "outreach",
+    "cold-email",
+    "email-warmup",
+    "linkedin",
+    "instagram",
+    "email-verification",
+    "sales",
+    "mcp"
+  ]
+}
