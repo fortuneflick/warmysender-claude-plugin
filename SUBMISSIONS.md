@@ -9,6 +9,9 @@ Order: **1. push the repo → 2. Anthropic → 3. Cursor → 4. xAI → 5. claud
 > **xAI status 2026-09-09:** PR opened — https://github.com/xai-org/plugin-marketplace/pull/641 (remote source pinned to `a6bc0679`). After any change to this repo, bump the `sha` in a follow-up PR; never open a parallel entry.
 > **Cursor status 2026-09-09:** publisher application at cursor.com/marketplace/publish is a one-page form (org name `WarmySender`, handle `warmysender`, contact hello@warmysender.com, logo https://raw.githubusercontent.com/fortuneflick/warmysender-claude-plugin/main/assets/logo.svg, repo URL, website https://warmysender.com). Not listed yet (cursor.com/marketplace/warmysender is 404).
 
+> **ChatGPT status 2026-09-09:** the program is now "ChatGPT Plugins" — portal https://platform.openai.com/plugins (OpenAI org login, Apps Management access, verified publisher identity; no public status check). Requirements: `/.well-known/openai-apps-challenge` domain verification (already served by the app), honest tool annotations, a fully featured demo account WITHOUT MFA, exactly 5 positive + 3 negative test cases, privacy/terms/support URLs, test in Developer Mode on desktop + mobile. Policy risk: guidelines ban "telemarketing / consent-bypass" and in-plugin upselling — foreground opt-out, consent and the scheduler's caps; never mention credits/upgrades inside the plugin.
+> **Meta 2026-09-09:** there is NO Meta directory for third-party MCP servers ("Meta Ads AI Connectors" is Meta's own server that users add into Claude/ChatGPT). Nothing to submit.
+
 ## 0. Before anything
 
 - [ ] Create the public GitHub repo `fortuneflick/warmysender-claude-plugin` and push `main` (this repo has one local commit; nothing is pushed).
