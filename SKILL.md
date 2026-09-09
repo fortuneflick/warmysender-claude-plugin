@@ -194,6 +194,27 @@ mcp_servers:
 
 Add this to ~/.hermes/config.yaml, then run /reload-mcp in the chat.
 
+#### Muse Code
+
+This client connects with an API key — `~/.config/muse/settings.json`:
+
+```json
+{
+  "schema_version": 1,
+  "mcp_servers": {
+    "warmysender": {
+      "transport": "streamable_http",
+      "url": "https://warmysender.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ws_YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+Save this as ~/.config/muse/settings.json (create the folder if it is not there yet) and start Muse Code again. Keep the schema_version line — Muse Code rejects the file without it. If you already have a settings file, add only the warmysender block inside your existing mcp_servers.
+
 #### Grok Bot
 
 This client connects with an API key:
