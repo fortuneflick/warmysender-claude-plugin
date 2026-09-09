@@ -6,6 +6,9 @@ Order: **1. push the repo → 2. Anthropic → 3. Cursor → 4. xAI → 5. claud
 
 > **Status 2026-09-09 (verified in the claude.ai admin portal, org "Warmysender"):** the MCP server listing `warmysender` is **In review** (submitted 2 weeks ago) and the Claude Code/Cowork plugin from this repo is **Submitted, pending review**. Do NOT open a second submission for either — updates pushed to this repo are picked up automatically. The empty repo `fortuneflick/warmysender-agent` created on 2026-09-09 is superseded by this one and can be deleted.
 
+> **xAI status 2026-09-09:** PR opened — https://github.com/xai-org/plugin-marketplace/pull/641 (remote source pinned to `a6bc0679`). After any change to this repo, bump the `sha` in a follow-up PR; never open a parallel entry.
+> **Cursor status 2026-09-09:** publisher application at cursor.com/marketplace/publish is a one-page form (org name `WarmySender`, handle `warmysender`, contact hello@warmysender.com, logo https://raw.githubusercontent.com/fortuneflick/warmysender-claude-plugin/main/assets/logo.svg, repo URL, website https://warmysender.com). Not listed yet (cursor.com/marketplace/warmysender is 404).
+
 ## 0. Before anything
 
 - [ ] Create the public GitHub repo `fortuneflick/warmysender-claude-plugin` and push `main` (this repo has one local commit; nothing is pushed).
@@ -39,7 +42,7 @@ Order: **1. push the repo → 2. Anthropic → 3. Cursor → 4. xAI → 5. claud
   "source": {
     "source": "url",
     "url": "https://github.com/fortuneflick/warmysender-claude-plugin.git",
-    "sha": "<PIN AFTER FIRST PUSH>"
+    "sha": "a6bc067975ef239b6d9a48ee3a06d184077b2c01"
   },
   "homepage": "https://warmysender.com/ai-agents",
   "keywords": [
@@ -54,7 +57,7 @@ Order: **1. push the repo → 2. Anthropic → 3. Cursor → 4. xAI → 5. claud
 }
 ```
 
-3. Replace `<PIN AFTER FIRST PUSH>` with the full 40-char lowercase SHA (a tag or branch is rejected).
+3. Replace `a6bc067975ef239b6d9a48ee3a06d184077b2c01` with the full 40-char lowercase SHA (a tag or branch is rejected).
 4. `python3 scripts/generate-plugin-index.py` then `python3 scripts/validate-catalog.py` and `python3 scripts/generate-plugin-index.py --check` — all must pass.
 5. PR title: `Add warmysender`. Fill in the template. Keywords/domains are brand-scoped on purpose (xAI rejects generic terms like `email` or `linkedin`).
 6. Expect the "official org vs personal account" question: `fortuneflick` is the owner's GitHub account. If review pushes back, transfer the repo to an org named after the product and re-pin the SHA.
