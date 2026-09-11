@@ -331,7 +331,7 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `bulk_create_prospects` | mutating | Create up to 500 prospects in one call. |
 | `add_to_suppression_list` | mutating | Suppress emails or domains to prevent any future outreach from any campaign in the workspace. |
 | `list_campaigns` | read-only | Return email campaigns in the workspace. |
-| `get_campaign` | read-only | Return full details for one email campaign including steps (sequence emails) and top-level stats. |
+| `get_campaign` | read-only | Return full details for one email campaign including steps (sequence emails), top-level stats, and the opt-out this campaign will actually put in its footer. |
 | `list_prospects` | read-only | Return prospects in the workspace with cursor pagination. |
 | `get_prospect` | read-only | Return full details for one prospect, including custom fields, list memberships, and enrollment history summary. |
 | `list_suppressions` | read-only | Return the workspace's suppression list (emails and domains that won't be contacted). |
