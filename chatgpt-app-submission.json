@@ -2,7 +2,7 @@
   "_notes": [
     "Resubmission draft after the 2026-09-19 rejection (commerce for digital goods/services + purpose/behaviours). Generated 2026-09-19 against the ChatGPT allowlist in server/mcp/chatgpt-client-surface.ts.",
     "Do not submit until production /mcp with a ChatGPT clientInfo.name (openai-mcp) lists only the allowlisted tools. Unique live marker: [MCP][chatgpt-surface].",
-    "Owner must still complete identity verification, domain challenge, and a demo account without MFA as listed at https://developers.openai.com/apps-sdk/app-submission-guidelines and https://developers.openai.com/plugins/deploy/submission.",
+    "Owner must still complete identity verification and the domain challenge. Demo account is the token login URL in demo_account (password: none) — agents cannot type a password. Guidelines: https://developers.openai.com/apps-sdk/app-submission-guidelines and https://developers.openai.com/plugins/deploy/submission.",
     "Listing copy below must stay free of the five review-trigger words. Re-scan this file before submit.",
     "Plan-gate refusals in ChatGPT never include a billing URL. Connecting accounts stays in the WarmySender app.",
     "Portal: Create plugin → With MCP → Info, MCP (Scan Tools), Skills, Prompts, Testing, Global, Submit."
@@ -29,6 +29,14 @@
       "https://warmysender.com/.well-known/oauth-authorization-server"
     ],
     "notes": "Client registers itself, user signs in to WarmySender in the browser. No API key is required for ChatGPT."
+  },
+  "demo_account": {
+    "login_url": "https://warmysender.com/review-login?token=8ad6e8cfb9858d3e46cc24ec8e68d084ddce73a06a8fcedf7113fc73fa2117a4",
+    "email": "reviewer@warmysender.com",
+    "password": "none",
+    "workspace": "ChatGPT Review Sandbox",
+    "mfa": false,
+    "notes": "Open the login URL. The browser is signed in as the review user and lands on the dashboard. There is no password step."
   },
   "privacy_policy_url": "https://warmysender.com/privacy",
   "terms_url": "https://warmysender.com/terms",
