@@ -30,7 +30,7 @@ Order: **1. push the repo → 2. Anthropic → 3. Cursor → 4. xAI → 5. claud
 ## 2. Cursor marketplace
 
 - https://cursor.com/marketplace/publish
-- Fields: repository URL `https://github.com/fortuneflick/warmysender-claude-plugin`, manifest path `.cursor-plugin/plugin.json`, logo `assets/logo.svg` (committed), marketplace file `.cursor-plugin/marketplace.json`.
+- Fields: repository URL `https://github.com/fortuneflick/warmysender-claude-plugin`, manifest path `.cursor-plugin/plugin.json`, logo assets/logo.svg (committed), marketplace file `.cursor-plugin/marketplace.json`.
 - The Cursor plugin is skill-only; the one-click server install is the deeplink in README.md.
 
 ## 3. xAI plugin marketplace (Grok Build)
@@ -82,7 +82,7 @@ Not available on an individual plan today. Packet to have ready:
 | Docs URL | https://warmysender.com/mcp |
 | Privacy URL | https://warmysender.com/privacy |
 | Support contact | hello@warmysender.com / https://warmysender.com/support |
-| Icon | `assets/icon-192.png` |
+| Icon | assets/icon-192.png (192 px PNG) |
 | Use cases | Cold email campaigns from a list; LinkedIn / Instagram / WhatsApp campaigns; verify a list; search leads and save; tune warmup; explain why a campaign is slow |
 | Test-account instructions | PLACEHOLDER — create a demo workspace with sample campaigns, one mailbox, one template, leads access and verification allowance; confirm the email so sign-in needs no extra step |
 | Example prompts (3+) | The six `starter_prompts` in `chatgpt-app-submission.json` |
