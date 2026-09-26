@@ -12,6 +12,9 @@
   "repository": "https://github.com/fortuneflick/warmysender-claude-plugin",
   "license": "MIT",
   "privacyPolicyUrl": "https://warmysender.com/privacy",
+  "termsOfServiceUrl": "https://warmysender.com/terms",
+  "supportUrl": "https://warmysender.com/support",
+  "documentationUrl": "https://warmysender.com/documentation/connect-your-ai-agent",
   "keywords": [
     "email warmup",
     "email deliverability",
