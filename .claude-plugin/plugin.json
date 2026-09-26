@@ -1,7 +1,8 @@
 {
   "name": "warmysender",
+  "displayName": "WarmySender",
   "version": "1.1.0",
-  "description": "Run your outreach on autopilot from Claude Code and Cowork — build, launch and manage cold email, LinkedIn, Instagram and WhatsApp campaigns, verify emails, search a 200M+ B2B lead database and tune warmup in plain language. The agent never sends a message itself and can never raise a limit: every action is paced by WarmySender's scheduler within safe sending limits.",
+  "description": "WarmySender is email warmup and deliverability software with B2B campaign tools for AI agents. From Claude Code and Cowork your agent can check mailbox health, tune warmup, verify email lists, and draft, launch, pause and diagnose email campaigns in plain language. Campaign emails carry the footer from your workspace settings (your postal address and an opt-out line), send only inside the sending window you set, and are paced by WarmySender's scheduler within each mailbox's daily limits. The agent never sends a message itself, can never raise a limit, and confirms with you before it launches, pauses or removes anything.",
   "author": {
     "name": "WarmySender",
     "email": "hello@warmysender.com",
@@ -10,20 +11,23 @@
   "homepage": "https://warmysender.com/mcp",
   "repository": "https://github.com/fortuneflick/warmysender-claude-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://warmysender.com/privacy",
   "keywords": [
-    "outreach",
-    "cold-email",
-    "email-warmup",
-    "linkedin",
-    "instagram",
-    "email-verification",
-    "sales",
-    "mcp"
+    "email warmup",
+    "email deliverability",
+    "mailbox health",
+    "email verification",
+    "list hygiene",
+    "campaign analytics",
+    "B2B email campaigns",
+    "AI agents",
+    "MCP server",
+    "MCP connector"
   ],
   "skills": [
     "./skills/warmysender",
     "./skills/campaign-doctor",
-    "./skills/cold-email-launch",
+    "./skills/campaign-launch",
     "./skills/list-hygiene"
   ]
 }

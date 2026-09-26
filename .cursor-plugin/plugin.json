@@ -28,7 +28,7 @@
   "skills": [
     "./skills/warmysender",
     "./skills/campaign-doctor",
-    "./skills/cold-email-launch",
+    "./skills/campaign-launch",
     "./skills/list-hygiene"
   ]
 }

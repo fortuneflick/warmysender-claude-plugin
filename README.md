@@ -1,8 +1,8 @@
 <p align="center"><img src="assets/logo.svg" alt="WarmySender" width="96"></p>
 
-# WarmySender agent skill
+# WarmySender for AI agents
 
-**Run your outreach on autopilot with AI agents.** Your agent can run your entire outreach — build, launch and manage cold email, LinkedIn, Instagram and WhatsApp campaigns, verify emails, search a 200M+ B2B lead database, and tune email warmup, all in plain language — while WarmySender's scheduler keeps every account inside safe limits no matter who's driving. Works with Claude, ChatGPT, Cursor, Codex, OpenClaw, and Hermes Agent, and any agent that speaks MCP.
+**Email warmup, deliverability and B2B campaigns for AI agents.** Your agent can check mailbox and campaign health, tune warmup, verify email lists before they are used, explain why a campaign sent little or nothing, and draft, launch and pause campaigns in plain language, while WarmySender's scheduler keeps every account inside its sending limits no matter who's driving. Campaign emails carry the footer from your workspace settings (your postal address and an opt-out line), and the agent never sends a message itself. Works with Claude, ChatGPT, Cursor, Codex, OpenClaw, and Hermes Agent, and any agent that speaks MCP.
 
 This repo ships the skill (`SKILL.md`) plus plugin manifests for Claude Code, Cursor and Grok Build. The MCP server itself is hosted at `https://warmysender.com/mcp`.
 
@@ -51,10 +51,10 @@ Cursor one-click: [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark
 
 ## What the agent can do
 
-- Build, launch, pause and resume cold email, LinkedIn, Instagram and WhatsApp campaigns; enroll prospects; import lists; manage suppressions.
+- Build, launch, pause and resume email, LinkedIn, Instagram and WhatsApp campaigns; enroll prospects; import lists; manage suppressions.
 - Publish LinkedIn posts and manage recruiter jobs.
 - Verify single addresses or whole lists, check the allowance first, and turn results into a clean list.
-- Search 200M+ B2B leads for free and save or export the ones you want.
+- Search the built-in B2B contact directory and save the records you want to a list.
 - Tune warmup per mailbox or in bulk, and read mailbox, account and campaign health.
 <!-- GENERATED:tool-count START -->
 - 78 tools in total — grouped by channel in [SKILL.md](SKILL.md#3-tool-catalogue-78-tools).
@@ -71,7 +71,7 @@ Cursor one-click: [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark
 Besides the general `warmysender` skill, the Claude Code plugin ships three workflow skills:
 
 - **campaign-doctor** — diagnose a quiet campaign from real skip reasons
-- **cold-email-launch** — idea → approved copy → enrolled prospects → safe launch
+- **campaign-launch** — idea → approved copy → verified contacts → a launch you confirm
 - **list-hygiene** — verify lists allowance-first and build clean prospect lists
 
 Requires a WarmySender account on a paid plan. Email features need a connected mailbox; LinkedIn, Instagram and WhatsApp need the respective add-on. Accounts are connected in the WarmySender app — deliberately not through the agent.

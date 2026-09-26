@@ -5,13 +5,13 @@
     "email": "hello@warmysender.com"
   },
   "metadata": {
-    "description": "WarmySender outreach skill for AI agents — cold email, warmup, LinkedIn, Instagram, WhatsApp, email verification and 200M leads",
+    "description": "WarmySender for AI agents: email warmup, deliverability, list verification and B2B email campaigns with limits the agent cannot raise.",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "warmysender",
-      "description": "WarmySender for AI agents — run cold email, email warmup, LinkedIn, Instagram and WhatsApp outreach on autopilot, verify emails and tap a 200M B2B lead database from Claude, ChatGPT, Cursor, Codex, OpenClaw, Hermes Agent or any agent that speaks MCP. The agent never sends directly and never raises a limit: WarmySender's scheduler paces every action inside safe limits.",
+      "description": "WarmySender is email warmup and deliverability software with B2B campaign tools for AI agents. From Claude Code and Cowork your agent can check mailbox health, tune warmup, verify email lists, and draft, launch, pause and diagnose email campaigns in plain language. Campaign emails carry the footer from your workspace settings (your postal address and an opt-out line), send only inside the sending window you set, and are paced by WarmySender's scheduler within each mailbox's daily limits. The agent never sends a message itself, can never raise a limit, and confirms with you before it launches, pauses or removes anything.",
       "source": "./"
     }
   ]

@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [Unreleased]
 
 ### Changed
+- The `cold-email-launch` skill is now `campaign-launch`; every manifest points at the new path. Its steps are unchanged: approved copy, verified contacts, a healthy mailbox, the sending window and footer, then a launch the user confirms.
+- Claude plugin manifest: `displayName` and `privacyPolicyUrl` added; the description and keywords lead with warmup, deliverability and list verification and state the limits the agent cannot change. README title and opening paragraph say the same.
+- `chatgpt-app-submission.json` no longer carries the reviewer sign-in token; the owner pastes it into the review form.
 - The connect section and tool catalogue in `SKILL.md`, and the install commands, connect table and tool count in `README.md`, are now generated from the WarmySender platform's own install and tool definitions (regions marked `<!-- GENERATED:... -->`). OpenClaw now shows sign-in as the default with the API-key form as the fallback, and the Claude and Claude Code hints match the in-app copy word for word.
 - `README.md` Security section restated plainly: no executable code in this repo, one runtime endpoint (`https://warmysender.com/mcp`), the optional local launcher `@warmysender/mcp` only proxies to that endpoint, `npx skills add` fetches this repository only, no telemetry.
 

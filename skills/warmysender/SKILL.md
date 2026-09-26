@@ -1,6 +1,6 @@
 ---
 name: warmysender
-description: Run cold email, email warmup, LinkedIn, Instagram and WhatsApp outreach, email verification and a 200M+ B2B lead database from any MCP agent through WarmySender — the agent builds, launches and manages campaigns in plain language and never sends a message itself; WarmySender's scheduler paces every action inside safe limits.
+description: Email warmup, deliverability and B2B campaigns through WarmySender: check mailbox health, tune warmup, verify email lists, and build, launch and pause email, LinkedIn, Instagram and WhatsApp campaigns in plain language. The agent never sends a message itself and cannot raise a limit; WarmySender's scheduler paces every action. Use when the user mentions WarmySender, email warmup, deliverability, email verification or a campaign.
 homepage: https://warmysender.com/ai-agents
 metadata: {"openclaw":{"emoji":"🔥","requires":{"bins":[],"env":[]}}}
 ---

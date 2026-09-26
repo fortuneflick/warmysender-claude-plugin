@@ -1,9 +1,9 @@
 ---
-name: cold-email-launch
-description: Build and launch a cold email campaign on WarmySender end to end — sequence copy, prospects, safe launch. Use when the user wants to create, write, or launch a cold email / outreach campaign.
+name: campaign-launch
+description: Build and launch an email campaign on WarmySender end to end with the user's approval at each step: sequence copy, a verified contact list, a healthy warmed mailbox, the sending window and footer, then a launch the user confirms. Use when the user wants to create, write or launch an email campaign on WarmySender.
 ---
 
-# Cold Email Launch
+# Campaign Launch
 
 Take the user from idea to a running campaign using WarmySender's MCP tools.
 
