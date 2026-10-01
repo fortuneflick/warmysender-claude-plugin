@@ -1,5 +1,6 @@
 {
   "_notes": [
+    "2026-10-02: v1.1.0 rejected with 'We're unable to complete your sign-in or OAuth flow' — Connect sent the reviewer straight to Google and the review login landed on the dashboard. Fixed live (GL#806, 06488192): the sign-in screen has a Review account form that continues to the approval screen. Reviewer path verified end to end on production 2026-10-02 (register → sign in → approve → token → 24 tools).",
     "Resubmission draft after the 2026-09-19 rejection (commerce for digital goods/services + purpose/behaviours). Generated 2026-09-19 against the ChatGPT allowlist in server/mcp/chatgpt-client-surface.ts.",
     "Do not submit until production /mcp with a ChatGPT clientInfo.name (openai-mcp) lists only the allowlisted tools. Unique live marker: [MCP][chatgpt-surface].",
     "Owner must still complete identity verification and the domain challenge. Demo account is the token login URL, pasted by the owner into the review form and never committed (password: none) — agents cannot type a password. Guidelines: https://developers.openai.com/apps-sdk/app-submission-guidelines and https://developers.openai.com/plugins/deploy/submission.",
@@ -31,12 +32,16 @@
     "notes": "Client registers itself, user signs in to WarmySender in the browser. No API key is required for ChatGPT."
   },
   "demo_account": {
-    "login_url": "https://warmysender.com/review-login?token=<shared privately with the reviewer; never committed>",
     "email": "reviewer@warmysender.com",
-    "password": "none",
+    "password": "<entered by the owner in the review form; never committed>",
     "workspace": "ChatGPT Review Sandbox",
     "mfa": false,
-    "notes": "Open the login URL the owner pastes into the review form. The browser is signed in as the review user and lands on the dashboard. There is no password step. The token lives only on the WarmySender host."
+    "steps": [
+      "In ChatGPT, press Connect on WarmySender.",
+      "The WarmySender sign-in screen opens. Under 'Review account', enter the email and password above and press 'Sign in and continue'.",
+      "Review the permissions on the next screen and press Approve. ChatGPT is connected; no email code, MFA or other setup is needed."
+    ],
+    "notes": "Do not use Google or Apple; the review account signs in only through the Review account form on the sign-in screen. The optional link https://warmysender.com/review-login?token=<owner-supplied> still signs the same account in, but it is not needed."
   },
   "privacy_policy_url": "https://warmysender.com/privacy",
   "terms_url": "https://warmysender.com/terms",
