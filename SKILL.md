@@ -68,7 +68,7 @@ codex mcp add warmysender --url https://warmysender.com/mcp
 codex mcp login warmysender
 ```
 
-ChatGPT Plus and every plan above it include Codex. Run both lines in your terminal; the second opens your browser to sign in to WarmySender.
+ChatGPT Work, Business and Enterprise/Edu: turn on developer mode, add this server address, and sign in — ChatGPT uses its own hosted callback, so you never paste a key into the chat. Codex inside ChatGPT Work has no local terminal and cannot finish that sign-in. ChatGPT Plus: run both lines in a local terminal; the second opens your browser.
 
 API-key fallback:
 
@@ -430,7 +430,7 @@ Verify a single address or submit a whole list, check how much of your allowance
 | `submit_verification_batch` | mutating | Submit up to 5,000 email addresses for verification and return a run id to poll with get_verification_result. |
 | `get_verification_result` | read-only | Return the progress and per-address outcomes of a verification run, optionally filtered to one outcome. |
 | `list_verification_batches` | read-only | List this workspace's email verification runs, newest first, with their status and result counts. |
-| `get_verification_allowance` | read-only | Return how many email addresses can be verified right now: where access comes from (plan allowance, purchased credits, or the one free daily check), the plan allowance left this month and today, the credit balance, free checks left today, and the largest single batch accepted. |
+| `get_verification_allowance` | read-only | Return how many email addresses can be verified right now: where access comes from (plan allowance, purchased credits, or the one free daily check), the plan allowance left this month and today, any add-on allowance left this month (no daily pace), the credit balance, free checks left today, and the largest single batch accepted. |
 | `cancel_verification_batch` | **mutating (destructive — confirm first)** | Stop a verification run that is still in progress and return the unused credits. |
 | `create_list_from_verification` | mutating | Build a reusable prospect list from a finished verification run. |
 
