@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 78 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 79 tools.
 
 #### Hermes Agent
 
@@ -309,11 +309,11 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (78 tools)
+## 3. Tool catalogue (79 tools)
 
-All 78 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 79 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (19 tools)
+### Cold email & prospects (20 tools)
 
 Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; and manage your suppression list — all in plain language.
 
@@ -331,7 +331,8 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `bulk_create_prospects` | mutating | Create up to 500 prospects in one call. |
 | `add_to_suppression_list` | mutating | Suppress emails or domains to prevent any future outreach from any campaign in the workspace. |
 | `list_campaigns` | read-only | Return email campaigns in the workspace. |
-| `get_campaign` | read-only | Return full details for one email campaign including steps (sequence emails), top-level stats, and the opt-out this campaign will actually put in its footer. |
+| `get_campaign` | read-only | Return full details for one email campaign including steps (sequence emails), top-level stats, the opt-out this campaign will actually put in its footer, and `sendingBlocked` — non-null when a running campaign has no mailbox that can send (which mailbox, why, and the fix the user makes in the app). |
+| `preview_campaign_emails` | read-only | Render an email campaign's emails exactly as each enrolled contact will receive them — subject and body with merge tags and custom fields filled in, spintax resolved, follow-up subjects as threaded, and the opt-out line — so you can check personalised copy contact by contact before the campaign starts. |
 | `list_prospects` | read-only | Return prospects in the workspace with cursor pagination. |
 | `get_prospect` | read-only | Return full details for one prospect, including custom fields, list memberships, and enrollment history summary. |
 | `list_suppressions` | read-only | Return the workspace's suppression list (emails and domains that won't be contacted). |

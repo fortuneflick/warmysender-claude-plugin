@@ -57,7 +57,7 @@ Cursor one-click: [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark
 - Search the built-in B2B contact directory and save the records you want to a list.
 - Tune warmup per mailbox or in bulk, and read mailbox, account and campaign health.
 <!-- GENERATED:tool-count START -->
-- 78 tools in total — grouped by channel in [SKILL.md](SKILL.md#3-tool-catalogue-78-tools).
+- 79 tools in total — grouped by channel in [SKILL.md](SKILL.md#3-tool-catalogue-79-tools).
 <!-- GENERATED:tool-count END -->
 
 ## What the agent cannot do
