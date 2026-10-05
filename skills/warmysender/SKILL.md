@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 79 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 80 tools.
 
 #### Hermes Agent
 
@@ -309,13 +309,13 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (79 tools)
+## 3. Tool catalogue (80 tools)
 
-All 79 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 80 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (20 tools)
+### Cold email & prospects (21 tools)
 
-Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; and manage your suppression list — all in plain language.
+Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; see every email that went out; and manage your suppression list — all in plain language.
 
 | Tool | Kind | What it does |
 |---|---|---|
@@ -335,6 +335,7 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `preview_campaign_emails` | read-only | Render an email campaign's emails exactly as each enrolled contact will receive them — subject and body with merge tags and custom fields filled in, spintax resolved, follow-up subjects as threaded, and the opt-out line — so you can check personalised copy contact by contact before the campaign starts. |
 | `list_prospects` | read-only | Return prospects in the workspace with cursor pagination. |
 | `get_prospect` | read-only | Return full details for one prospect, including custom fields, list memberships, and enrollment history summary. |
+| `list_sent_emails` | read-only | List the campaign emails your mailboxes sent, one record each: recipient, campaign and step, From address, subject, Message-ID and sent time. |
 | `list_suppressions` | read-only | Return the workspace's suppression list (emails and domains that won't be contacted). |
 | `list_skipped_actions` | read-only | Explain why a campaign sent little or nothing recently: the actions that did not run in the last N hours, grouped by cause, each with a plain-language explanation and a flag saying whether it is normal pacing that resumes on its own or something that needs attention. |
 | `list_email_templates` | read-only | Return the workspace's saved email templates (name, category, subject, preview text). |
