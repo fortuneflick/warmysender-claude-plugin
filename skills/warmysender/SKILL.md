@@ -416,7 +416,7 @@ Tune warmup settings, adjust many mailboxes at once, and check mailbox health an
 
 | Tool | Kind | What it does |
 |---|---|---|
-| `update_warmup_settings` | mutating | Change warmup configuration for a single mailbox: enable/disable, target daily volume, strategy type. |
+| `update_warmup_settings` | mutating | Change warmup configuration for a single mailbox: enable/disable, target daily volume, strategy type, and the language warmup emails are written in. |
 | `bulk_update_warmup` | mutating | Apply the same warmup settings to multiple mailboxes at once. |
 | `list_mailboxes` | read-only | Return all connected email mailboxes with status, warmup state, and top-level health. |
 | `get_mailbox_health` | read-only | Return detailed health and deliverability status for one mailbox, including any recent issues. |
