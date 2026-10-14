@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 80 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 81 tools.
 
 #### Hermes Agent
 
@@ -309,11 +309,11 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (80 tools)
+## 3. Tool catalogue (81 tools)
 
-All 80 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 81 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (21 tools)
+### Cold email & prospects (22 tools)
 
 Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; see every email that went out; and manage your suppression list — all in plain language.
 
@@ -336,6 +336,7 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `list_prospects` | read-only | Return prospects in the workspace with cursor pagination. |
 | `get_prospect` | read-only | Return full details for one prospect, including custom fields, list memberships, and enrollment history summary. |
 | `list_sent_emails` | read-only | List the campaign emails your mailboxes sent, one record each: recipient, campaign and step, From address, subject, Message-ID and sent time. |
+| `list_replies` | read-only | List the replies your email campaigns received, newest first, one record each: who replied, which campaign, the reply subject, the reply text (bodyText, up to 4,000 characters; bodyTruncated says if it was cut), the reply's Message-ID and the Message-ID of the email it answered. |
 | `list_suppressions` | read-only | Return the workspace's suppression list (emails and domains that won't be contacted). |
 | `list_skipped_actions` | read-only | Explain why a campaign sent little or nothing recently: the actions that did not run in the last N hours, grouped by cause, each with a plain-language explanation and a flag saying whether it is normal pacing that resumes on its own or something that needs attention. |
 | `list_email_templates` | read-only | Return the workspace's saved email templates (name, category, subject, preview text). |
