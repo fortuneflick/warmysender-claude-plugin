@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 88 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 89 tools.
 
 #### Hermes Agent
 
@@ -309,11 +309,11 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (88 tools)
+## 3. Tool catalogue (89 tools)
 
-All 88 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 89 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (29 tools)
+### Cold email & prospects (30 tools)
 
 Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; see every email that went out; and manage your suppression list — all in plain language.
 
@@ -321,6 +321,7 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 |---|---|---|
 | `create_campaign` | mutating | Create a new email campaign in draft status. |
 | `update_campaign` | mutating | Partial update of a campaign. |
+| `update_campaign_step` | mutating | Change the subject, preview text or body of one email step in a campaign — any status, including running. |
 | `start_campaign` | mutating | Start an email campaign. |
 | `pause_campaign` | **mutating (destructive — confirm first)** | Pause a running email campaign. |
 | `resume_campaign` | mutating | Resume a paused email campaign. |
