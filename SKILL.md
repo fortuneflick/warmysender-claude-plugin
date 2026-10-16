@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 81 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 87 tools.
 
 #### Hermes Agent
 
@@ -309,11 +309,11 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (81 tools)
+## 3. Tool catalogue (87 tools)
 
-All 81 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 87 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (22 tools)
+### Cold email & prospects (28 tools)
 
 Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; see every email that went out; and manage your suppression list — all in plain language.
 
@@ -324,6 +324,8 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `start_campaign` | mutating | Start an email campaign. |
 | `pause_campaign` | **mutating (destructive — confirm first)** | Pause a running email campaign. |
 | `resume_campaign` | mutating | Resume a paused email campaign. |
+| `archive_campaign` | mutating | Archive a paused, completed or draft campaign so it leaves the campaign list. |
+| `unarchive_campaign` | mutating | Bring an archived campaign back to the campaign list, PAUSED. |
 | `enroll_prospects` | mutating | Add prospects to an email campaign. |
 | `unenroll_prospects` | **mutating (destructive — confirm first)** | Stop a campaign for specific prospects (soft-cancel; audit trail preserved). |
 | `create_prospect` | mutating | Create a prospect in the workspace (or reuse the existing one) and optionally add it to a list. |
@@ -337,6 +339,10 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `get_prospect` | read-only | Return full details for one prospect, including custom fields, list memberships, and enrollment history summary. |
 | `list_sent_emails` | read-only | List the campaign emails your mailboxes sent, one record each: recipient, campaign and step, From address, subject, Message-ID and sent time. |
 | `list_replies` | read-only | List the replies your email campaigns received, newest first, one record each: who replied, which campaign, the reply subject, the reply text (bodyText, up to 4,000 characters; bodyTruncated says if it was cut), the reply's Message-ID and the Message-ID of the email it answered. |
+| `list_conversations` | read-only | List the conversations in your Unified Inbox — replies to your cold emails plus LinkedIn, Instagram and WhatsApp chats — newest first. |
+| `get_conversation` | read-only | Read one inbox conversation in full: every message in the order it happened, who wrote it, when it was sent and (for chats) when it was delivered, read or edited, plus any internal notes your team left on an email thread. |
+| `update_conversation` | mutating | Change how an email conversation is filed: status (open, closed, snoozed — with snooze_until), sentiment (positive, negative, neutral, ooo, spam, uncategorized), unread (true/false), starred, or assigned_to (a workspace member's user id, or null to unassign). |
+| `add_conversation_note` | mutating | Add an internal note to an email conversation — a summary, a next step, a hand-off for a teammate. |
 | `list_suppressions` | read-only | Return the workspace's suppression list (emails and domains that won't be contacted). |
 | `list_skipped_actions` | read-only | Explain why a campaign sent little or nothing recently: the actions that did not run in the last N hours, grouped by cause, each with a plain-language explanation and a flag saying whether it is normal pacing that resumes on its own or something that needs attention. |
 | `list_email_templates` | read-only | Return the workspace's saved email templates (name, category, subject, preview text). |
