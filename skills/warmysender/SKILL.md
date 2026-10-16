@@ -167,7 +167,7 @@ API-key fallback:
 openclaw mcp set warmysender '{"url":"https://warmysender.com/mcp","headers":{"Authorization":"Bearer ws_YOUR_API_KEY_HERE"}}'
 ```
 
-Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 87 tools.
+Run this once to register WarmySender. OpenClaw can then call any of WarmySender's 88 tools.
 
 #### Hermes Agent
 
@@ -309,11 +309,11 @@ Create a key in the WarmySender app under **Settings → API Keys** (keys start 
 ---
 
 <!-- GENERATED:catalogue START -->
-## 3. Tool catalogue (87 tools)
+## 3. Tool catalogue (88 tools)
 
-All 87 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
+All 88 tools are workspace-scoped: a tool only ever sees the workspace the signed-in user (or key) belongs to. "read-only" tools change nothing; "mutating" tools write drafts, settings or scheduler work; "destructive" tools stop, remove or cancel something and should be confirmed first.
 
-### Cold email & prospects (28 tools)
+### Cold email & prospects (29 tools)
 
 Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-import prospects; see every email that went out; and manage your suppression list — all in plain language.
 
@@ -330,6 +330,7 @@ Build, launch, pause, and resume cold-email campaigns; add, update, and bulk-imp
 | `unenroll_prospects` | **mutating (destructive — confirm first)** | Stop a campaign for specific prospects (soft-cancel; audit trail preserved). |
 | `create_prospect` | mutating | Create a prospect in the workspace (or reuse the existing one) and optionally add it to a list. |
 | `update_prospect` | mutating | Partial update of a prospect's fields. |
+| `set_prospect_status` | mutating | Change the status of contacts (for example Do Not Contact or Active). |
 | `bulk_create_prospects` | mutating | Create up to 500 prospects in one call. |
 | `add_to_suppression_list` | mutating | Suppress emails or domains to prevent any future outreach from any campaign in the workspace. |
 | `list_campaigns` | read-only | Return email campaigns in the workspace. |
