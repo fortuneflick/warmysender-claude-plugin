@@ -38,7 +38,7 @@ Sign in (default):
 https://warmysender.com/mcp
 ```
 
-In Claude open Customize → Connectors, choose + then Add custom connector, paste this address and click Add. Claude then opens a WarmySender sign-in — approve it and you are connected.
+In Claude open Customize → Connectors, choose + then Add custom connector and paste this address. Leave the options Claude marks Detected as they are (Sign in now, Register automatically), scroll down and click Add. Claude then opens the WarmySender sign-in and approve screen — approve it and you are connected. There is nothing to authorize inside WarmySender beforehand. If no sign-in window appears, allow pop-ups for claude.ai and try again.
 
 API-key fallback — `claude_desktop_config.json`:
 
